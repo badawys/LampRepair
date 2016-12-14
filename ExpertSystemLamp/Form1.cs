@@ -17,8 +17,8 @@ namespace ExpertSystemLamp
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            // Declare and intilize Questions and Rules lists
-            List <Question> questions = new List<Question>();
+            // Declare and initialize Questions and Rules lists
+            List<Question> questions = new List<Question>();
             List<QuestionRule> rules = new List<QuestionRule>();
 
             // Add Quetions to the qutions list
@@ -55,7 +55,7 @@ namespace ExpertSystemLamp
             rules.Add(new QuestionRule(10, false, "No Solution!"));
             rules.Add(new QuestionRule(10, true, "Fix or replace the outlet"));
 
-            // intilize the expert system
+            // initialize the expert system
             myExpertSystem = new ExpertSystem(questions, rules);
 
             //call the next step to ask the question
